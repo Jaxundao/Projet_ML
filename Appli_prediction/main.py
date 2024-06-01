@@ -17,9 +17,6 @@ def prediction(X_encode):
 
 def main():
 
-    # image
-    st.image('/mount/src/projet_ml/Appli_prediction/model.sav', width=700, use_column_width=False)
-
     # Code HTML
     html = """
         <style>
