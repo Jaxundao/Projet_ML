@@ -1,11 +1,9 @@
 import pickle
 import streamlit as st
 import pandas as pd
-import os
 
 # chemin
-current_directory = os.path.dirname(__file__)
-model_path = os.path.join(current_directory, 'model.sav')
+model_path = '/mount/src/projet_ml/Appli_prediction/model.sav'
 
 # Chargement du modèle XGBoost retenu
 with open(model_path, 'rb') as f:
