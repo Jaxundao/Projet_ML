@@ -1,3 +1,4 @@
+pip install -r requirements.txt
 import pickle
 import streamlit as st
 import pandas as pd
