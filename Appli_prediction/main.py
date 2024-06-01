@@ -1,10 +1,15 @@
 import pickle
 import streamlit as st
 import pandas as pd
+import os
+
+# chemin
+current_directory = os.path.dirname(__file__)
+model_path = os.path.join(current_directory, 'model.sav')
 
 # Chargement du modèle XGBoost retenu
-f = open('model.sav', 'rb')
-model = pickle.load(f)
+with open(model_path, 'rb') as f:
+    model = pickle.load(f)
 
 # Fonction de prédiction
 def prediction(X_encode):
