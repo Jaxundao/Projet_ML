@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 # Chargement du modèle XGBoost retenu
-f = open('.\model.sav', 'rb')
+f = open('model.sav', 'rb')
 model = pickle.load(f)
 
 # Fonction de prédiction
